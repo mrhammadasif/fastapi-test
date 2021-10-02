@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import List, Optional
+from typing import Dict, List, Optional
 from fastapi import FastAPI
 from fastapi.params import Query
 
@@ -20,6 +20,11 @@ async def read_item(
     skip: int = 0, limit: int = 10, item: Optional[List[str]] = Query(...)
 ):
   return {skip, limit, item}
+
+
+@app.post("/index-weights")
+async def create_index_weights(weights: Dict[int, float]):
+  return weights
 
 
 @app.post("/items", response_model=Student)
