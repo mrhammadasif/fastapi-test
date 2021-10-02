@@ -1,0 +1,11 @@
+{
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#06063b",
+    "tab.activeForeground": "#fff",
+    "activityBar.background": "#302E23",
+    "titleBar.activeBackground": "#434031",
+    "titleBar.activeForeground": "#FAF9F8"
+  },
+  "python.formatting.provider": "yapf",
+  "editor.formatOnSave": true
+}
